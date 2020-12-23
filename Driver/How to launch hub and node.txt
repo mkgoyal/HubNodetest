@@ -1,0 +1,23 @@
+reference:
+https://medium.com/chaya-thilakumara/selenium-grid-chrome-browser-c2cb986e0f70
+
+
+Download selenium-server-standalone-3.141.59.jar and add in maven project 
+
+HUB:
+----------
+create folder in local system as HUB save standalone jar file in HUB folder
+
+open cmd.exe and go to HUB folder and run
+#java -jar standaloneFile.jar -role hub
+
+
+
+NODE:
+-------------------
+Create a NODE folder in client mechine and save standalone .jar file and chrome.exe driver then run command as
+#java -Dwebdriver.chrome.driver="chromer.exe(just press tab)" -jar selenium.jar(type s and hit tab button) -role node -hub hublocation/grid/register/
+
+
+
+
